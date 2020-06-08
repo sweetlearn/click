@@ -1,8 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name="click-example-colors",
-    version="1.0",
+    name='yourpackage',
+    version='0.1',
+    packages=find_packages(),
     py_modules=["colors"],
     include_package_data=True,
     install_requires=[
@@ -13,5 +14,6 @@ setup(
     entry_points="""
         [console_scripts]
         colors=colors:cli
+        yourscript=yourpackage.scripts.yourscript:cli
     """,
 )
