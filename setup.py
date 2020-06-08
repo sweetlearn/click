@@ -14,6 +14,6 @@ setup(
     entry_points="""
         [console_scripts]
         colors=colors:cli
-        yourscript=yourpackage.scripts.yourscript:cli
+        # yourscript=yourpackage.scripts.yourscript:cli
     """,
 )
